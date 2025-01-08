@@ -1,0 +1,251 @@
+body{
+    background-color: aliceblue;
+    margin: 0 auto;
+   
+}
+
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+.nav-buttons{
+    width: 100%;
+    height: 8vh;
+    border: 1px, solid ;
+   
+    
+     /* text-shadow: 0.1vw  0.1vw 0.1vw rgb(0, 0, 0); */ 
+}
+
+
+header{
+    position: relative;
+    z-index: 3;
+}
+
+.breadcrumb-list{
+    display: flex;
+    margin: 4vh 0vw 0vw 80vw;
+}
+
+.cback-btn, .curent{
+    all: unset;
+    margin: 0 0.2vw 0 0vw;
+    margin-top: 10vh; 
+    transition: all 0.5s ease-out;
+}
+
+.cback-btn:hover{
+    text-shadow: 0.02vw  0.01vw 0.1vw rgb(0, 0, 0);
+}
+
+
+a {
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgba(165, 136, 102, 1);
+    text-decoration: none;
+}
+.contact-block{
+    height: 99vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    width: 80%;
+    height: 80%;
+    margin-left: 10vh;
+    margin-top: 5vh;
+}
+
+.heading{
+    margin-top: 8vh;
+}
+.message-inp{
+    width: 34vw; /* Change this value to adjust the width */
+    height: 34vh;  /* Change this value to adjust the height */
+    font-size: 1.8vh; 
+    margin: 0 0 2em 0;
+    margin: 1em;
+}
+
+.email-inp{
+    width: 30vw;
+}
+
+p{
+    margin: 1em;
+    font-size: 1.1em;
+    margin-bottom: 3.5vh;
+}
+
+label{
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+input{
+  margin: 1em;
+  font-size: 1em;
+}
+.name-inp{
+    width: 30vw;
+}
+
+.form-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5vh ;
+    margin-left: 5vh;
+}
+
+.inputs-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.01em solid black;
+    border-radius: 0.5em;
+    background-color: rgb(250, 249, 241);
+    margin-bottom: 5vh;
+}
+
+.button1{
+    width: 9vw;
+    height: 4vh;
+    font-size: 1.8vh;
+    border-radius: 0.4em;
+    margin: 0em 1em 0em 1em;
+}
+
+.button1:hover{
+    background-color: rgba(165, 136, 102, 1);
+    color: white;
+    border-radius: 8px;
+}
+
+.logoImg {
+    width: 120px;
+    height: 66px; 
+    margin-left: 42%;
+    margin-top: 1vh;
+   
+    
+}
+
+@media (max-width: 1024px) {
+
+
+    .message-inp{
+        width: 60vw;
+        font-size: 2vh;
+    }
+
+    .name-inp{
+        width: 60vw;
+    }
+
+    .email-inp{
+        width: 60vw;
+    }
+
+    .button1{
+        width: 25vw;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-list{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .nav-bar{
+        display: none;
+    }
+    .contact-form {
+        
+        margin-left: 10vw;
+    }
+    .form-block{
+        margin-left: 0vw;
+    }
+
+
+    .message-inp{
+        width: 60vw;
+        font-size: 2vh;
+    }
+
+    .name-inp{
+        width: 60vw;
+    }
+
+    .email-inp{
+        width: 60vw;
+    }
+
+    .button1{
+        width: 27vw;
+        height: 6vh;
+       
+    }
+
+    .logoImg{
+        width: 8vw;
+        height: 8vh;
+        margin-left: 8vw;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .contact-form{
+        margin: 10vw;
+    }
+
+    .form-block{
+        margin: 0 auto;
+    }
+
+    .message-inp{
+        width: 70vw;
+        font-size: 2vh;
+    }
+
+    .name-inp{
+        width: 70vw;
+        font-size: 0.9em;
+    }
+
+    .email-inp{
+        width: 70vw;
+        font-size: 0.9em;
+    }
+
+    .button1{
+        width: 27vw;
+        height: 6vh;
+        margin: 1.05em;
+        font-size: 0.9em;
+    }
+    .logoImg{
+        width: 14vw;
+        height: 8vh;
+        margin-left: 8vw;
+    }
+}

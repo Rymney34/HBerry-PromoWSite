@@ -1,0 +1,1386 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+
+}
+
+
+
+main, div{
+    unicode-bidi: plaintext;
+}
+
+
+
+
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+.nav-buttons{
+    width: 100%;
+    height: 8vh;
+    border: 1px, solid ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+    align-items: center;
+    font-size: 2.7vh;
+    font-family: system-ui;
+     /* text-shadow: 0.1vw  0.1vw 0.1vw rgb(0, 0, 0); */ 
+  
+    
+
+}
+.contactsBtn{
+    transition: all 0.5s ease-out;
+}
+
+.contactsBtn:hover{
+    
+    text-shadow: 0.1vw  0.1vw 0.1vw rgb(0, 0, 0);
+    
+}
+
+.portBtn{
+    transition: all 0.5s ease-out;
+    
+}
+.portBtn:hover{
+    text-shadow: 0.1vw  0.1vw 0.1vw rgb(0, 0, 0);
+    transition: 0.5s ease;
+}
+
+.pricesBtn{
+    transition: all 0.5s ease-out;
+}
+.pricesBtn:hover{
+    text-shadow: 0.1vw  0.1vw 0.1vw rgb(0, 0, 0);
+    
+}
+
+
+header{
+    position: relative;
+    z-index: 3;
+}
+
+.logoImg{
+    width: 125px;
+    height:70px;
+    
+}
+
+
+.name{
+    margin: 15% 0  0 0 ;
+}
+
+h1{
+    font-size: 6.4vw;
+    letter-spacing: 2px;
+    display: block;
+    margin: 1em;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+    
+}
+
+strong{
+   
+}
+.second{
+    display: block;
+    position: relative;
+    margin: 1vw 0 0 8vw;
+}
+h3{
+    font-size: 1.9vw;
+    margin: 1em;
+    
+}
+.name2{
+    /* font-size: 70px; */
+   
+}
+.price{
+    margin-right: 40%;
+}
+
+.save-bold{
+   color: rgba(165, 136, 102, 1);
+   
+}
+
+.moments-bold{
+    color: rgba(165, 136, 102, 1);
+}
+
+
+
+.button-contact {
+    border-radius: 5px;
+    color:black;
+    width: 15vw;
+    height: 8vh;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.button-contact span {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.button-contact:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(157, 157, 157, 1) 0%, rgba(236, 182, 115, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    transition: all .35s;
+    z-index: 1;
+}
+
+.button-contact:hover {
+    color: #fff;
+}
+
+.button-contact:hover:after {
+    width: 100%;
+}
+
+
+
+
+.left-block{
+   
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.right-block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+   
+    /* width: 50%; */
+    height: 100%;
+
+    
+    
+
+}
+
+.photo{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.slider-form{
+    border: 0.2px black solid;
+    width: 27vw;
+    height: 80vh;
+    position: static;
+    overflow: hidden;
+    border-radius: 0.8em;
+    box-shadow: 0em 0em 4em 0em rgba(0, 0, 0, 1);
+}
+
+.slider-img.active {
+    opacity: 1;
+}
+.right-block .img {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+#slider1{
+    width:100%;
+    height:100%;
+    /* object-fit: contain; */
+}
+
+.slider-img.active {
+    opacity: 1;
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.fade {
+    animation: fade 9s infinite;
+}
+
+@keyframes fade {
+    0% {opacity: 0} 
+    40% {opacity: 1}
+    70% {opacity: 1}
+    99% {opacity: 0}
+}
+
+.slider-form .img{
+    position: absolute;
+}
+
+.button{
+    width: 4vw;
+    height: 15vh;
+}
+
+.right-block .last {
+    height: 7vh;
+    width: 2.5vw;
+    margin-right: 1vw;
+   
+}
+
+.right-block .next {
+
+    margin-left: 1vw;
+    height: 7vh;
+    width: 2.5vw;
+    
+}
+
+
+
+.right-block .last:hover{
+    height: 8vh;
+    width: 3.5vw;
+    color: aliceblue;
+    text-shadow: 0.1vw  0.1vw 0.1vw rgb(0, 0, 0);
+}
+.right-block .next:hover{
+    height: 8vh;
+    width: 3.5vw;
+
+}
+
+.inRBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.3em;
+}
+
+.about-me{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading2{
+    margin: 8vh 0 2.3vh 0;
+    font-size: 4vw;
+    padding-bottom: 0.5vh;
+    border-bottom: 2px solid black;
+    width: 25vw;
+    text-align: center;
+    font-family: "Dancing Script" ;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.myText{
+    
+    width: 88%;
+    font-size: 1.8vh;
+    text-align: center;
+    padding: 1.5vh;
+    letter-spacing: 0.07em;
+    line-height: 2.5;
+    text-wrap: pretty;
+    font-weight: 500;
+    overflow: auto;
+
+    
+}
+
+
+.portfolio-block{
+    
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.images-block{
+    width: 80%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.image{
+    margin: 1em;
+    min-height: 30%;
+    width: 20%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.img-wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    flex-grow: 0;
+}
+
+.portImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.buttons-block{
+    margin-top: 1vh;
+}
+.buttonLM{
+    
+    border-radius: 0.4em;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.4em;
+}
+
+.buttonLM:hover {
+    background-color: rgba(165, 136, 102, 1);
+    color: white;
+    border-radius: 8px;
+  }
+.info-blocks{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    margin: 3vh 0px 0px 0px ;
+
+}
+
+.prices-block{
+    
+    
+    height: 120vh;
+    
+
+    
+}
+
+.one-info-row{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.image-block{
+   border: 1px solid black;
+    width: 19vw;
+    height: 25vw;
+    border-radius: 10px;
+
+}
+
+.all-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descrText{
+    font-size: 3vh;
+}
+.price-block{
+    font-size: 2.5vh;
+}
+
+.findMore{
+    border-radius: 10px;
+    width: 20vw;
+    height: 5vh;
+    font-size: 2.5vh;
+
+}
+.signUp{
+    
+    
+    border-radius: 8px;
+    width: 20vw;
+    height: 6vh;
+    margin: 0 0 3vh 0;
+    font-size: 2.5vh;
+}
+
+.signUp:hover {
+    background-color: rgba(165, 136, 102, 1);
+    color: white;
+    border-radius: 8px;
+}
+  
+.findMore:hover {
+    background-color: rgba(165, 136, 102, 1);
+    color: white;
+    border-radius: 8px;
+}
+
+  
+.headingPrice{
+    margin-bottom: 0.5vh;
+}
+
+.buttons-prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+    
+}
+
+.contacts-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-details{
+    font-style: black;
+    font-size: 1.4vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+   
+}
+
+
+.first-contact-block{
+    margin: 0 0 0 15vw;
+}
+.second-contact-block{
+    margin: 0px 15vw;
+}
+
+
+.headingContact{
+    margin-bottom: 0.5vh;
+    border-bottom: 2px solid black;
+    width: 60vw;
+}
+
+.aBtns{
+    
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a{
+    font-weight: 500;
+    color: rgba(165, 136, 102, 1);
+    text-decoration: none;
+}
+
+/* General styles for the main-block using flexbox for larger screens */
+
+
+
+.main-block {
+    /* margin: 7.4vh; */
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+
+}
+
+.menu-list{
+    visibility: hidden;
+    width: 0px;
+    display: none
+}
+
+/* Media query for screens up to 1200px */
+@media (max-width: 1200px) {
+    .main-block {
+        
+    }
+
+    .slider-form {
+        height: 63vh;
+    }
+
+    .menu-list{
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .buttonLM{
+        width: 15vw;
+        height: 6vh;
+    }
+}
+
+/* Media query for screens up to 1000px */
+@media (max-width: 1024px) {
+    .main-block {
+        /* max-width: 768px; */
+        margin-top: 5vh;
+        width: 100%;
+        height: 75vh;
+    }
+
+    h1{
+        font-size: 3em;
+        margin-top: 11vh;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+
+    .button-contact{
+        width: 15vw;
+    }
+
+    .left-block{
+       
+    }
+
+   
+
+    
+    .slider-form{
+        width: 30vw;
+        height: 60vh;
+    }
+    
+    .right-block .next{
+       
+    }
+
+    .right-block .last{
+        
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .portfolio-block {
+
+        width: 100%
+    }
+
+    .image-block {
+        width: 20vw;
+        height: 35vh;
+    }
+
+   
+    
+
+    .buttonLM{
+        width: 20vw;
+        height: 8vh;
+    }
+   
+    .prices-block {
+       
+        height: 90vh;
+        
+    }
+
+
+
+    
+    .prices-block {
+        width: 100%;
+    }
+    
+
+    .contacts-block {
+        width: 100%;
+    }
+
+
+    .footer-details{
+        font-size: 2.3vw;
+    }
+    
+
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+
+    .nav-bar {
+        display: none;
+    }
+    
+
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+      }
+      .burger {
+        margin: 2.2em;
+        margin-left: 86vw;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+        
+      }
+      .burger::before,
+      .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #000;
+      }
+      .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #000;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+      }
+      .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+      }
+      .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0,0,0,0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+      }
+      .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+      }
+      .menu-list {
+        visibility: inherit;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: grid;
+        gap: 12px;
+        padding: 42px 0;
+        margin: 0;
+        background: rgb(189, 169, 116);
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: .3s;
+        width: 100vw;
+        height: 100vh;
+      }
+      .menu-item {
+        display: block;
+        padding: 8px;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .menu-item:hover {
+        background: rgba(255,255,255,.2)
+      }
+      .burger-checkbox:checked ~ .menu-list {
+        transform: translateX(0);
+        
+      }
+      .burger-checkbox:checked ~ body {
+        overflow: hidden;
+      }
+      
+
+
+    .main-block  {
+        width: 480px;
+        flex-direction: column;
+        width: 100%;
+        /* Stack elements vertically */
+    
+    }
+
+
+
+    h1{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+
+    .button-contact{
+        width: 37vw;
+        height: 8vh;
+        font-size: 1.5em;
+        margin: 0vw 0vw 0vw 0vw;
+    }
+
+    .left-block{
+       
+        margin-top: 15vh;
+    }
+    .right-block{
+        height: 100vh;
+    }
+
+    .inRBlock{
+        width: 100vw;
+        height: 70vh;
+    }
+    .slider-form{
+        width: 50vw;
+        height: 70vh;
+    }
+    
+    .right-block .next{
+        width: 10vw;
+        height: 10vh;
+        
+    }
+
+    .right-block .last{
+        width: 10vw;
+        height: 10vh;
+       
+    }
+
+    .button{
+        margin-right: 7vw;
+    }
+
+    .about-me{
+        margin-top: 50vh;
+    }
+
+    .myText{
+        height: 100vh;
+        font-size: 3vh;
+        margin-bottom: 1em;
+    }
+
+    .images-block{
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+       
+        
+    }
+    .image{
+        width: 65vw;
+        border: 1px solid black;
+    }
+
+    .buttonLM{
+        width: 20vw;
+        height: 8vh;
+    }
+    .info-blocks{
+        flex-direction: column;
+
+    }
+
+    .headingPrice{
+        font-size: 7vh;
+    }
+
+    .heading2{
+        font-size: 7vh;
+        border-bottom: 2px solid black;
+        width: 50vw;
+        margin-top: 5vh;
+    }
+
+    .prices-block{
+        height: 370vh;
+    }
+    .one-info-row{
+        /* margin-top: 2em; */
+        width: 100vw;
+        height: 110vh;
+        border: 1px;
+        margin-top: 20vh;
+    }
+
+    .image-block{
+        width: 52vw;
+        height: 66vh;
+    }
+
+    .descrText{
+        font-size: 6vh;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 4vh;
+    }
+    .signUp{
+        height: 10vh;
+        width: 43vw;
+    }   
+
+    .findMore{
+        height: 10vh;
+        width: 43vw;
+    }
+
+    .headingContact{
+        font-size: 10vh;
+        margin-top: 50vh;
+    }
+
+    .footer-details{
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: vw ;
+    }
+    
+}
+
+
+
+/* Media query for screens up to 480px */
+@media (max-width: 425px) {
+    .main-block {
+        margin: 18vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    
+    .burger {
+        margin: 1.8em;
+        margin-left: 88vw;
+    }
+    .right-block {
+        width: 100vw; /* Ensure right block takes full width */
+        
+    }
+    
+    .name{
+        margin-top: 1vw;
+    }
+
+
+    h1{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 1.3em;
+        margin-left: 12vw;
+    }
+
+    .button-contact{
+        width: 40vw;
+        height: 8vh;
+        font-size: 1.5em;
+    }
+
+    .left-block{
+        margin-top: 15vh;
+    }
+    .right-block{
+        height: 100vh;
+    }
+
+    .inRBlock{
+        width: 100vw;
+        height: 70vh;
+    }
+    .slider-form{
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .right-block .next{
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .right-block .last{
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .about-me{
+        margin-top: 40vh;
+    }
+
+    .myText{
+        height: 100vh;
+        font-size: 3vh;
+        margin-bottom: 1em;
+    }
+
+    .images-block{
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+    
+        
+    }
+
+    
+    .image{
+        width: 80%;
+        border: 1px solid black;
+    }
+
+    .buttonLM{
+        width: 20vw;
+        height: 8vh;
+    }
+    .info-blocks{
+        flex-direction: column;
+
+    }
+
+    .headingPrice{
+        font-size: 7vh;
+    }
+
+    .heading2{
+        font-size: 6vh;
+        border-bottom: 2px solid black;
+        width: 50vw;
+        margin-top: 5vh;
+    }
+
+    .prices-block{
+        height: 370vh;
+    }
+    .one-info-row{
+        margin-top: 2em;
+        width: 100vw;
+        height: 110vh;
+        border: 1px;
+        
+    }
+
+    .image-block{
+        width: 65vw;
+        height: 50vh;
+    }
+
+    .descrText{
+        font-size: 3.8vh;
+    }
+
+    h4{
+        font-size: 4vh;
+    }
+    .signUp{
+        height: 10vh;
+        width: 43vw;
+    }   
+
+    .findMore{
+        height: 10vh;
+        width: 43vw;
+    }
+
+    .headingContact{
+        font-size: 5vh;
+        
+    }
+
+    .footer-details{
+        font-size: 1.5em;
+        margin: 1em;
+        margin-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 50vw ;
+    }
+
+    span{
+        margin:0.1em;
+    }
+
+    .first-contact-block {
+        margin: 0;
+    }
+
+    .second-contact-block {
+        margin: 0;
+        margin-right: 2.45em;
+    }
+
+    .heading2{
+        margin: 0;
+    }
+
+    }
+    
+
+/* Media query for screens up to 320px */
+@media (max-width: 375px) {
+
+    .burger {
+        margin: 2.2em;
+        margin-left: 86vw;
+    }
+    .main-block {
+        width: 100vw; /* Make sure it fits smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right-block {
+        width: 100vw; /* Ensure right block takes full width */
+    }
+
+    h1{
+        font-size: 10vw;
+    }
+    h3{
+        font-size: 5vw;
+        margin-left: 12vw;
+    }
+
+    .button-contact{
+        width: 44vw;
+        height: 8vh;
+        font-size: 1.5em;
+    }
+
+    .left-block{
+        margin-top: 15vh;
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .right-block{
+        height: 100vh;
+    }
+
+    .inRBlock{
+        width: 100vw;
+        height: 70vh;
+    }
+    .slider-form{
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .right-block .next{
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .right-block .last{
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .about-me{
+        margin-top: 40vh;
+    }
+
+    .myText{
+        height: 100vh;
+        font-size: 2.8vh;
+        margin-bottom: 1em;
+    }
+
+    .images-block{
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+    
+        
+    }
+    .image{
+        width: 80%;
+        border: 1px solid black;
+    }
+
+    .buttonLM{
+        width: 20vw;
+        height: 8vh;
+    }
+    .info-blocks{
+        flex-direction: column;
+
+    }
+
+    .headingPrice{
+        font-size: 7vh;
+    }
+
+    .heading2{
+        font-size: 5vh;
+        border-bottom: 2px solid black;
+        width: 50vw;
+        margin-top: 5vh;
+    }
+
+    .prices-block{
+        height: 370vh;
+    }
+    .one-info-row{
+        margin-top: 2em;
+        width: 100vw;
+        height: 110vh;
+        border: 1px;
+        
+    }
+
+    .image-block{
+        width: 69vw;
+        height: 46vh;
+    }
+
+    .descrText{
+        font-size: 3.8vh;
+    }
+
+    h4{
+        font-size: 4vh;
+    }
+    .signUp{
+        height: 10vh;
+        width: 43vw;
+    }   
+
+    .findMore{
+        height: 10vh;
+        width: 43vw;
+    }
+
+    .headingContact{
+        font-size: 5vh;
+    }
+
+    .footer-details{
+        font-size: 1.3em;
+        align-items: flex-start;
+        
+    }
+    
+
+}
+
+@media (max-width: 320px) {
+    .main-block {
+        width: 100vw; /* Make sure it fits smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-buttons {
+        
+    }
+    
+    .right-block {
+        width: 100vw; /* Ensure right block takes full width */
+    }
+
+    h1{
+        font-size: 2.1em;
+    }
+
+    
+    h3{
+        font-size: 5.1vw;
+        margin-left: 12vw;
+    }
+
+    .button-contact{
+        width:50vw;
+        height: 8vh;
+        font-size: 1.5em;
+    }
+
+    .left-block{
+        margin-top: 15vh;
+    }
+    .right-block{
+        height: 100vh;
+    }
+
+    .inRBlock{
+        width: 100vw;
+        height: 70vh;
+    }
+    .slider-form{
+        width: 70vw;
+        height: 55vh;
+    }
+
+    .right-block .next{
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .right-block .last{
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .about-me{
+        margin-top: 40vh;
+    }
+
+    .myText{
+        height: 100vh;
+        font-size: 3vh;
+        margin-bottom: 1em;
+    }
+
+    .images-block{
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+    
+        
+    }
+
+   
+    .image{
+        width: 80%;
+        border: 1px solid black;
+    }
+
+    .buttonLM{
+        width: 20vw;
+        height: 8vh;
+    }
+    .info-blocks{
+        flex-direction: column;
+
+    }
+
+    .headingPrice{
+        font-size: 7vh;
+    }
+
+    .heading2{
+        font-size: 4vh;
+        border-bottom: 2px solid black;
+        width: 50vw;
+        margin-top: 5vh;
+        
+    }
+
+    .p{
+        font-size: 1vh;
+    }
+
+    .myText{
+        font-size: 2vh;
+    }
+    .one-info-row{
+        margin-top: 2em;
+        width: 100vw;
+        height: 110vh;
+        border: 1px;
+    
+    }
+
+    .image-block{
+        width: 75vw;
+        height: 44vh;
+    }
+
+    .descrText{
+        font-size: 3.8vh;
+
+        
+       
+    }
+    .descPar{
+       
+        text-align: center;
+        
+    }
+
+    h4{
+        font-size: 4vh;
+    }
+    .signUp{
+        height: 10vh;
+        width: 43vw;
+    }   
+
+    .findMore{
+        height: 10vh;
+        width: 43vw;
+    }
+
+    .headingContact{
+        font-size: 5vh;
+    }
+
+    .second-contact-block {
+        margin: 0;
+        
+    }
+
+    .footer-details{
+        font-size: 1.4em;
+        margin-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 50vw ;
+    }
+
+}
+
