@@ -18,7 +18,7 @@
     "\\sliderImages\\DSC_0580 (2).jpg",
 
     "\\sliderImages\\09.jpg",
-    "\\sliderImages\\DSC_0592.jpg",
+    "\\sliderImages\\DSC_0571-1.jpg",
     "\\sliderImages\\01.jpg",
     "\\sliderImages\\IMG_0058.JPG",
     "\\sliderImages\\DSC_0100.jpg",
