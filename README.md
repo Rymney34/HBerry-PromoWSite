@@ -4,5 +4,5 @@ I was requested to develop a promo website for local photographer Helen Berry. I
 
 -All you need to do is download the repository
   -Open it in VSCode
-    -Search for index.html
+    -Search for package Mmsite and index.html
       -Run index.html with the live server
